@@ -5,7 +5,7 @@ metadata:
   name: hello
 spec:
   # 'version' is a valid semantic version string (see semver.org)
-  version: "v0.0.2"
+  version: "v0.0.3"
   # 'homepage' usually links to the GitHub repository of the plugin
   homepage: https://github.com/chriskim06/kubectl-hello
   # 'shortDescription' explains what the plugin does in only a few words
@@ -22,9 +22,9 @@ spec:
         - darwin
         - linux
     # 'uri' specifies .zip or .tar.gz archive URL of a plugin
-    uri: https://github.com/chriskim06/kubectl-hello/archive/v0.0.2.zip
+    uri: https://github.com/chriskim06/kubectl-hello/releases/download/v0.0.3/kubectl-hello-0.0.3.tar.gz
     # 'sha256' is the sha256sum of the url above
-    sha256: a00c556d14d17348ee39068d376083d78003cf1830b7e37e87228f366dced84b
+    sha256: 84bc765b593800fca9a871eb28572830629086f7fa86cd6d00b80f43ef59096c
     # 'files' lists which files should be extracted out from downloaded archive
     # 'bin' specifies the path to the the plugin executable among extracted files
     bin: hello
