@@ -1,0 +1,33 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  # 'name' must match the filename of the manifest.
+  name: hello
+spec:
+  # 'version' is a valid semantic version string (see semver.org)
+  version: "v0.0.1"
+  # 'homepage' usually links to the GitHub repository of the plugin
+  homepage: https://github.com/chriskim06/kubectl-hello
+  # 'shortDescription' explains what the plugin does in only a few words
+  shortDescription: "Says hello"
+  description: |
+    Says hello
+  # 'platforms' specify installation methods for various platforms (os/arch)
+  platforms:
+  - selector:
+      matchExpressions:
+      - key: "os"
+        operator: "In"
+        values:
+        - darwin
+        - linux
+    # 'uri' specifies .zip or .tar.gz archive URL of a plugin
+    uri: https://github.com/chriskim06/kubectl-hello/archive/v0.0.1.zip
+    # 'sha256' is the sha256sum of the url above
+    sha256: 2f8691084eda782eb5559a81b7a882c2b4c1c367c3083da2a2ef0ae66016f06a
+    # 'files' lists which files should be extracted out from downloaded archive
+    files:
+    - from: "kubectl-hello"
+      to: "./kubectl-hello"
+    # 'bin' specifies the path to the the plugin executable among extracted files
+    bin: kubectl-hello
