@@ -26,8 +26,5 @@ spec:
     # 'sha256' is the sha256sum of the url above
     sha256: 2f8691084eda782eb5559a81b7a882c2b4c1c367c3083da2a2ef0ae66016f06a
     # 'files' lists which files should be extracted out from downloaded archive
-    files:
-    - from: "kubectl-hello"
-      to: "kubectl-hello"
     # 'bin' specifies the path to the the plugin executable among extracted files
-    bin: kubectl-hello
+    bin: hello
