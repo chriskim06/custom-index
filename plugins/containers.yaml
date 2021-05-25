@@ -1,0 +1,31 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  # 'name' must match the filename of the manifest.
+  name: containers
+spec:
+  # 'version' is a valid semantic version string (see semver.org)
+  version: "v0.1.0"
+  # 'homepage' usually links to the GitHub repository of the plugin
+  homepage: https://github.com/chriskim06/kubectl-containers
+  # 'shortDescription' explains what the plugin does in only a few words
+  shortDescription: "Prints containers"
+  description: |
+    Prints containers for pods. Accepts other `kubectl get` arguments such
+    as `--selector` or `--namespace`.
+  # 'platforms' specify installation methods for various platforms (os/arch)
+  platforms:
+  - selector:
+      matchExpressions:
+      - key: "os"
+        operator: "In"
+        values:
+        - darwin
+        - linux
+    # 'uri' specifies .zip or .tar.gz archive URL of a plugin
+    uri: https://github.com/chriskim06/kubectl-containers/releases/download/v0.1.0/kubectl-containers-0.1.0.tar.gz
+    # 'sha256' is the sha256sum of the url above
+    sha256: 82ace815f54b708ff7374d3665a76b8f96c7e2d3292aa5b3b49b0e66f04a666c
+    # 'files' lists which files should be extracted out from downloaded archive
+    # 'bin' specifies the path to the the plugin executable among extracted files
+    bin: containers
