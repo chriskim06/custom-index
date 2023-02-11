@@ -1,0 +1,23 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: ptop
+spec:
+  version: "v0.1.0"
+  homepage: https://github.com/chriskim06/kubectl-ptop
+  shortDescription: "Fancy kubectl metrics"
+  description: |
+    A terminal UI for displaying pod or node metrics.
+  platforms:
+  - selector:
+      matchLabels:
+        os: darwin
+    uri: https://github.com/chriskim06/kubectl-ptop/releases/download/v0.1.0/kubectl-ptop_v0.1.0_darwin_amd64.tar.gz
+    sha256: d7079b79bf4e10e55ded435a2e862efe310e019b6c306a8ff04191238ef4b2b4
+    bin: kubectl-ptop
+  - selector:
+      matchLabels:
+        os: linux
+    uri: https://github.com/chriskim06/kubectl-ptop/releases/download/v0.1.0/kubectl-ptop_v0.1.0_linux_amd64.tar.gz
+    sha256: d7079b79bf4e10e55ded435a2e862efe310e019b6c306a8ff04191238ef4b2b4
+    bin: kubectl-ptop
