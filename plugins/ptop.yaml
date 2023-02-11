@@ -13,11 +13,11 @@ spec:
       matchLabels:
         os: darwin
     uri: https://github.com/chriskim06/kubectl-ptop/releases/download/v0.1.0/kubectl-ptop_v0.1.0_darwin_amd64.tar.gz
-    sha256: d7079b79bf4e10e55ded435a2e862efe310e019b6c306a8ff04191238ef4b2b4
+    sha256: 8985a79ce403ab13f093dfa93e055ec7cc82585c910e5c05dfa52bb39cd1a887
     bin: kubectl-ptop
   - selector:
       matchLabels:
         os: linux
     uri: https://github.com/chriskim06/kubectl-ptop/releases/download/v0.1.0/kubectl-ptop_v0.1.0_linux_amd64.tar.gz
-    sha256: d7079b79bf4e10e55ded435a2e862efe310e019b6c306a8ff04191238ef4b2b4
+    sha256: 45b376bc21ef348c45a29000b8489afe18751b19b38b5295e32e1754be60185d
     bin: kubectl-ptop
