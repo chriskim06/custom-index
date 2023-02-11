@@ -3,7 +3,7 @@ kind: Plugin
 metadata:
   name: ptop
 spec:
-  version: "v0.1.0"
+  version: "v0.1.1"
   homepage: https://github.com/chriskim06/kubectl-ptop
   shortDescription: "Fancy kubectl metrics"
   description: |
@@ -12,12 +12,12 @@ spec:
   - selector:
       matchLabels:
         os: darwin
-    uri: https://github.com/chriskim06/kubectl-ptop/releases/download/v0.1.0/kubectl-ptop_v0.1.0_darwin_amd64.tar.gz
-    sha256: 8985a79ce403ab13f093dfa93e055ec7cc82585c910e5c05dfa52bb39cd1a887
+    uri: https://github.com/chriskim06/kubectl-ptop/releases/download/v0.1.1/kubectl-ptop_v0.1.1_darwin_amd64.tar.gz
+    sha256: 2c32c7e6c48fcd3f2d92fb00fd5c85c6224259fdd37f5fe64dd68851e37a6ebe
     bin: kubectl-ptop
   - selector:
       matchLabels:
         os: linux
-    uri: https://github.com/chriskim06/kubectl-ptop/releases/download/v0.1.0/kubectl-ptop_v0.1.0_linux_amd64.tar.gz
-    sha256: 45b376bc21ef348c45a29000b8489afe18751b19b38b5295e32e1754be60185d
+    uri: https://github.com/chriskim06/kubectl-ptop/releases/download/v0.1.1/kubectl-ptop_v0.1.1_linux_amd64.tar.gz
+    sha256: 2c32c7e6c48fcd3f2d92fb00fd5c85c6224259fdd37f5fe64dd68851e37a6ebe
     bin: kubectl-ptop
