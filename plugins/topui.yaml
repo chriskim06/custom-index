@@ -1,0 +1,23 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: topui
+spec:
+  version: "v0.1.3"
+  homepage: https://github.com/chriskim06/kubectl-topui
+  shortDescription: "Fancy kubectl metrics"
+  description: |
+    A terminal UI for displaying pod or node metrics.
+  platforms:
+  - selector:
+      matchLabels:
+        os: darwin
+    uri: https://github.com/chriskim06/kubectl-topui/releases/download/v0.1.3/kubectl-topui_v0.1.3_darwin_amd64.tar.gz
+    sha256: 2d47ca39f334a8e2ef176e74c9c98e18f3b0da882af840208171f387545ea246
+    bin: kubectl-topui
+  - selector:
+      matchLabels:
+        os: linux
+    uri: https://github.com/chriskim06/kubectl-topui/releases/download/v0.1.3/kubectl-topui_v0.1.3_linux_amd64.tar.gz
+    sha256: a1858a5f5a610f67d1ea1d8f6f0ef7148fc8b026a299760b7a522ce234f6d85b
+    bin: kubectl-topui
