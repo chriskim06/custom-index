@@ -3,7 +3,7 @@ kind: Plugin
 metadata:
   name: topui
 spec:
-  version: "v0.1.7"
+  version: "v0.2.0"
   homepage: https://github.com/chriskim06/kubectl-topui
   shortDescription: "Fancy kubectl metrics"
   description: |
@@ -12,12 +12,12 @@ spec:
   - selector:
       matchLabels:
         os: darwin
-    uri: https://github.com/chriskim06/kubectl-topui/releases/download/v0.1.7/kubectl-topui_v0.1.7_darwin_amd64.tar.gz
-    sha256: 277e8cb1e14f5479b09bc1223b4fb8c52c2e0ae9553ece6492a9442b89a3253e
+    uri: https://github.com/chriskim06/kubectl-topui/releases/download/v0.2.0/kubectl-topui_v0.2.0_darwin_amd64.tar.gz
+    sha256: 4e737132db1f3cde29f7b0ba836ed2697023cb51f7374f94247577346a37c48f
     bin: kubectl-topui
   - selector:
       matchLabels:
         os: linux
-    uri: https://github.com/chriskim06/kubectl-topui/releases/download/v0.1.7/kubectl-topui_v0.1.7_linux_amd64.tar.gz
-    sha256: 92d09d8f48ac011ba4a0ac52e04ffa661e2fbb79c7e6fbf14844fa448b7962b6
+    uri: https://github.com/chriskim06/kubectl-topui/releases/download/v0.2.0/kubectl-topui_v0.2.0_linux_amd64.tar.gz
+    sha256: e8ae17145ebd4e9cc32bcebe87c1a6ed805a310faf8a37e2ac61cce993656827
     bin: kubectl-topui
