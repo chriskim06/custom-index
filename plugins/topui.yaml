@@ -13,11 +13,11 @@ spec:
       matchLabels:
         os: darwin
     uri: https://github.com/chriskim06/kubectl-topui/releases/download/v0.3.0/kubectl-topui_v0.3.0_darwin_amd64.tar.gz
-    sha256: 26bc56ab1c048e8b8bd4b0a09a141ae8a5bd67cc8562600aa2bb101c5dc7b532
+    sha256: dd86abc742c75706ac1dea52261b32fb2da4fc9fa38d2a3196743ac60d53a6b2
     bin: kubectl-topui
   - selector:
       matchLabels:
         os: linux
     uri: https://github.com/chriskim06/kubectl-topui/releases/download/v0.3.0/kubectl-topui_v0.3.0_linux_amd64.tar.gz
-    sha256: dd86abc742c75706ac1dea52261b32fb2da4fc9fa38d2a3196743ac60d53a6b2
+    sha256: 26bc56ab1c048e8b8bd4b0a09a141ae8a5bd67cc8562600aa2bb101c5dc7b532
     bin: kubectl-topui
